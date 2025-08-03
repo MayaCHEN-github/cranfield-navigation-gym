@@ -68,7 +68,7 @@ This repo was developed and tested using Ubuntu 20.04 and Python 3.8.10. We cann
       
     ```bash
     git clone https://github.com/parisChatz/ros-rl-env.git
-    cd ~/ros-rl-env/catkin_ws/src
+    cd ~/ros-rl-env/catkin_ws
     rosdep install --from-paths src --ignore-src -r -y
     catkin_make_isolated
     ```
