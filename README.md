@@ -80,7 +80,7 @@ This repo was developed and tested using Ubuntu 20.04 and Python 3.8.10. We cann
 1. Clone this repository and install it as a Python package:
     ```bash
     # 记得回到根目录下！
-    git clone https://github.com/mazqtpopx/cranfield-navigation-gym.git
+    git clone https://github.com/MayaCHEN-github/cranfield-navigation-gym.git # 这里改成了自己仓库的地址
     cd ~/cranfield-navigation-gym
     python3 -m pip install .
     ```
