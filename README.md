@@ -1,3 +1,5 @@
+不要直接从github clone仓库，先看一下installation部分的说明！
+---
 # Cranfield Navigation Gym
 <p align="center">
     <img width=40% src="https://github.com/mazqtpopx/cranfield-navigation-gym/blob/main/gifs/quick-train2.gif">
@@ -67,8 +69,9 @@ This repo was developed and tested using Ubuntu 20.04 and Python 3.8.10. We cann
 - **[ROS catkin workspace](https://github.com/parisChatz/ros-rl-env)**: This wrapper needs a ros package to handle the bringup of a robot, the controllers, and everything necessary to spawn a robot, and the ROS/Gazebo simulation environment. For this work we provide the ros workspace that uses the a mobile robot (Pioneer 3-DX) with the necessary packages for bringup, control, and simulation of this robot.
       
     ```bash
+    # 以下操作一定要在根目录（~）下进行！因为包里有一些文件路径写的是绝对路径，如果装在其他目录下会出错。
     git clone https://github.com/parisChatz/ros-rl-env.git
-    cd ~/ros-rl-env/catkin_ws
+    cd ~/ros-rl-env/catkin_ws # 这里有更改一行文件路径
     rosdep install --from-paths src --ignore-src -r -y
     catkin_make_isolated
     ```
@@ -76,6 +79,7 @@ This repo was developed and tested using Ubuntu 20.04 and Python 3.8.10. We cann
 ### Installing the Package
 1. Clone this repository and install it as a Python package:
     ```bash
+    # 记得回到根目录下！
     git clone https://github.com/mazqtpopx/cranfield-navigation-gym.git
     cd ~/cranfield-navigation-gym
     python3 -m pip install .
