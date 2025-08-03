@@ -1,6 +1,7 @@
 cv_bridge==1.16.2
 # dynamic_reconfigure==1.7.3
-genpy==0.6.15
+# genpy==0.6.15
+genpy==2016.1
 matplotlib==3.1.2
 numpy==1.24.3
 rospy==1.16.0
